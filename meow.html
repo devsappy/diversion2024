@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0" />
+        <title>Animated Login Form</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        ></link>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="login_form_container">
+            <div class="login_form">
+                <h2 id="formTitle">Login</h2>
+                <div class="input_group">
+                    <i class="fa fa-user"></i>
+                    <input
+                      type="text"
+                      placeholder="Username"
+                      class="input_text"
+                      autocomplete="off"/>
+                </div>
+                <div class="input_group">
+                    <i class="fa fa-unlock-alt"></i>
+                    <input
+                      type="password"
+                      placeholder="Password"
+                      class="input_text"
+                      autocomplete="off"
+                    />
+                </div>
+                <div id="additionalFields" style="display: none;">
+                    <div class="input_group">
+                        <i class="fa fa-envelope"></i>
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            class="input_text"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div class="input_group">
+                        <i class="fa fa-user"></i>
+                        <input
+                            type="text"
+                            placeholder="Name"
+                            class="input_text"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div class="input_group">
+                        <i class="fa fa-calendar"></i>
+                        <input
+                            type="text"
+                            placeholder="Date of Birth"
+                            class="input_text"
+                            autocomplete="off"
+                        />
+                    </div>
+                </div>
+                <div class="button group" id="login_button">
+                    <a id="submitBtn">Submit</a>
+                    
+                    <a href="#" id="signUpBtn" style="display: none;">Sign Up</a>
+                </div>
+                <div class="fotter">
+                    <a href="#" id="forgotPassword">Forgot Password?</a>
+                    <a href="#" id="toggleForm">Sign Up</a>
+                </div>
+            </div>
+            <div class="button group" id="signup_button" style="display: none;">
+
+                <a href="#" id="submitSignUpBtn">Submit Sign Up</a>
+                <a href="#" id="toggleToLogin">TLogin</a>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
