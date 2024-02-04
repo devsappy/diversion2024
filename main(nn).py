@@ -87,8 +87,8 @@ model_name = 'gpt2'
 output_dir = '/content'
 overwrite_output_dir = False
 per_device_train_batch_size = 16
-num_train_epochs = 20.0
-save_steps = 50000
+num_train_epochs = 30.0
+save_steps = 50000
 
 train(
     train_file_path=train_file_path,
